@@ -1,11 +1,5 @@
-from flask import Flask, render_template, request, render_template_string
+from flask import Flask, render_template, request
 import pickle
-import sklearn
-from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import AdaBoostRegressor
-from sklearn.preprocessing import MinMaxScaler
-import numpy as np
-import pandas as pd
 
 # Создание экземпляра Flask
 app = Flask(__name__)
