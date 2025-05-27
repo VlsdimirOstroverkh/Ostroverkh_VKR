@@ -66,11 +66,11 @@ def index():
 # Вспомогательные функции предсказания
 def predict1(input_data):
     y_pred1 = loaded_model_1.predict([input_data])[0]
-    return y_pred1
+    return round(y_pred1, 5)
 
 def predict2(input_data):
     y_pred2 = loaded_model_2.predict([input_data])[0]
-    return y_pred2
+    return round(y_pred2, 5)
 
 # Запуск приложения
 if __name__ == "__main__":
