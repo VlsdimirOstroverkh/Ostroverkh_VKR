@@ -1,10 +1,8 @@
 from flask import Flask, render_template, request, render_template_string
 import pickle
 import sklearn
-from sklearn.linear_model import GammaRegressor
+from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import MinMaxScaler
-import keras
-import tensorflow
 import numpy as np
 import pandas as pd
 

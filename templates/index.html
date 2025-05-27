@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Прогнозирование конечных свойств композиционных материалов</title>
+    </head>
+    <body>
+        <h1>Введите данные для расчета:</h1>
+        <form method="post">
+            <!-- Поле плотности -->
+            <p>
+                <label for="density">Плотность, кг/м³:</label>
+                <input id="density" name="density" type="number" required>
+            </p>
+            <!-- Поле модуля упругости -->
+            <p>
+                <label for="modulus">Модуль упругости, ГПа:</label>
+                <input id="modulus" name="modulus" type="number" required>
+            </p>
+            <!-- Поле количества отвердителя -->
+            <p>
+                <label for="hardener_amount">Количество отвердителя, м.%:</label>
+                <input id="hardener_amount" name="hardener_amount" type="number" required>
+            </p>
+            <!-- Поле содержания эпоксидных групп -->
+            <p>
+                <label for="epoxy_content">Содержание эпоксидных групп, %:</label>
+                <input id="epoxy_content" name="epoxy_content" type="number" required>
+            </p>
+            <!-- Поле температуры вспышки -->
+            <p>
+                <label for="flash_point">Температура вспышки, °C:</label>
+                <input id="flash_point" name="flash_point" type="number" required>
+            </p>
+            <!-- Поле поверхностной плотности -->
+            <p>
+                <label for="surface_density">Поверхностная плотность, г/м²:</label>
+                <input id="surface_density" name="surface_density" type="number" required>
+            </p>
+            <!-- Поле потребления смолы -->
+            <p>
+                <label for="resin_consumption">Потребление смолы, г/м²:</label>
+                <input id="resin_consumption" name="resin_consumption" type="number" required>
+            </p>
+            <!-- Поле угла нашивки -->
+            <p>
+                <label for="weaving_angle">Угол нашивки, градусы:</label>
+                <input id="weaving_angle" name="weaving_angle" type="number" required>
+            </p>
+            <!-- Поле шага нашивки -->
+            <p>
+                <label for="weaving_step">Шаг нашивки:</label>
+                <input id="weaving_step" name="weaving_step" type="number" required>
+            </p>
+            <!-- Поле плотности нашивки -->
+            <p>
+                <label for="weaving_density">Плотность нашивки:</label>
+                <input id="weaving_density" name="weaving_density" type="number" required>
+            </p>
+            <!-- Кнопка отправки -->
+            <p>
+                <button type="submit">Рассчитать</button>
+            </p>
+        </form>
+        <!-- Результат расчёта -->
+        <p>
+            {{ message | safe }}
+        </p>
+    </body>
+</html>
