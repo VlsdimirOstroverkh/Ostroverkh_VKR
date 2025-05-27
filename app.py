@@ -72,8 +72,6 @@ def predict2(input_data):
     y_pred2 = loaded_model_2.predict([input_data])[0]
     return round(y_pred2, 5)
 
-if __name__ == '__main__':
-    app.run(debug=True)
 
 # Переопределение точки входа для gunicorn
 application = app
