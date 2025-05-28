@@ -11,10 +11,10 @@ import pandas as pd
 app = Flask(__name__)
 
 # Загрузка моделей
-with open('y_pred_1.pkl', 'rb') as f1:
+with open('y_pred_1_1.pkl', 'rb') as f1:
     loaded_model_1 = pickle.load(f1)
 
-with open('y_pred_2.pkl', 'rb') as f2:
+with open('y_pred_2_2.pkl', 'rb') as f2:
     loaded_model_2 = pickle.load(f2)
 
 # Определение главной страницы
