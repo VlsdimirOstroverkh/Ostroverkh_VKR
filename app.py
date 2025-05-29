@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, render_template_string
 import pickle
 import sklearn
-from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import AdaBoostRegressor
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
@@ -11,10 +10,10 @@ import pandas as pd
 app = Flask(__name__)
 
 # Загрузка моделей
-with open('y_pred_1_1.pkl', 'rb') as f1:
+with open('y_pred_1_1_1.pkl', 'rb') as f1:
     loaded_model_1 = pickle.load(f1)
 
-with open('y_pred_2_2.pkl', 'rb') as f2:
+with open('y_pred_2_2_2.pkl', 'rb') as f2:
     loaded_model_2 = pickle.load(f2)
 
 # Определение главной страницы
