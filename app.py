@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, render_template_string
 import pickle
 import sklearn
+from sklearn.pipeline import Pipeline
 from sklearn.ensemble import AdaBoostRegressor
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
